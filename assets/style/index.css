@@ -1,0 +1,101 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0d0d0d;
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-color: #1a1a1a;
+    padding: 20px;
+    font-size: 24px;
+    font-weight: bold;
+}
+.search-bar {
+    margin: 20px auto;
+    width: 80%;
+    max-width: 500px;
+}
+.search-bar input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    background-color: #333;
+    color: white;
+}
+.produtos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+.produto {
+    background-color: #1f1f1f;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    width: 220px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+.produto img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+.produto h2 {
+    color: #00ccff;
+}
+.produto p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+.produto a {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #00ccff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+.produto a:hover {
+    background-color: #0088cc;
+}
+
+@media screen and (max-width: 600px) {
+    .produtos {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* Duas colunas */
+        gap: 30px; /* Aumenta o espaçamento entre os produtos */
+        justify-content: space-around; /* Ajusta para um espaçamento uniforme */
+    }
+    .produto {
+        width: 90%; /* Garante que os produtos fiquem menores */
+        margin: 0 auto;
+        padding: 15px;
+        box-shadow: 0 0 10px rgba(255, 255, 255, 0.2); /* Melhora o destaque individual */
+    }
+    .produto img {
+        width: 100%; /* Ocupa toda a largura do contêiner */
+        height: 200px; /* Define uma altura uniforme */
+        object-fit: cover; /* Garante que a imagem preencha o espaço proporcionalmente */
+        border-radius: 10px;
+        margin-bottom: 10px;
+    }
+    
+    
+    
+    .produto h2 {
+        font-size: 16px;
+    }
+    .produto a {
+        padding: 10px 15px;
+        font-size: 14px;
+    }
+}

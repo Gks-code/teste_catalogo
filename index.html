@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja de Serviços Digitais</title>
+    <link rel="stylesheet" href="assets/style/index.css">
+   
+</head>
+<body>
+    <header>
+        Loja de Serviços Digitais
+    </header>
+    <div class="search-bar">
+        <input type="text" id="searchInput" placeholder="Buscar por produto..." onkeyup="filterProducts()">
+    </div>
+    <main>
+        <section class="produtos" id="productList">
+            <div class="produto" data-name="Netflix">
+                <img src="assets/img/net.jpg" alt="Netflix">
+                <h2>Netflix</h2>
+                <a href="https://bit.ly/43TL4Lg">Comprar via WhatsApp</a>
+            </div>
+            <div class="produto" data-name="HBO Max">
+                <img src="assets/img/MAX.webp" alt="HBO Max">
+                <h2>HBO Max</h2>
+                <a href="https://bit.ly/43TL4Lg">Comprar via WhatsApp</a>
+            </div>
+            
+            <div class="produto" data-name="Crunchyroll">
+                <img src="assets/img/crunchyroll.png" alt="crunchyroll">
+                <h2>Crunchyroll</h2>
+                <a href="https://bit.ly/43TL4Lg">Comprar via WhatsApp</a>
+            </div>
+            
+            <div class="produto" data-name="Disney">
+                <img src="assets/img/disney.jpg" alt="Disney Premium">
+                <h2>Disney Premium</h2>
+                <a href="https://bit.ly/43TL4Lg">Comprar via WhatsApp</a>
+            </div>
+            <div class="produto" data-name="Prime">
+                <img src="assets/img/prime.png" alt="Prime Video">
+                <h2>Prime Video</h2>
+                <a href="https://bit.ly/43TL4Lg">Comprar via WhatsApp</a>
+            </div>
+            <div class="produto" data-name="Globo">
+                <img src="assets/img/globo.jpg" alt="Globo BB25">
+                <h2>Globo Play BBB25</h2>
+                <a href="https://bit.ly/43TL4Lg">Comprar via WhatsApp</a>
+            </div>
+            <div class="produto" data-name="Paramount">
+                <img src="assets/img/paramount.jpg" alt="Paramout Plus">
+                <h2>Paramount Plus</h2>
+                <a href="https://bit.ly/43TL4Lg">Comprar via WhatsApp</a>
+            </div>
+            <div class="produto" data-name="NBA Pass">
+                <img src="assets/img/nba.png" alt="NBA Pass">
+                <h2>NBA Pass</h2>
+                <a href="https://bit.ly/43TL4Lg">Comprar via WhatsApp</a>
+            </div>
+            <div class="produto" data-name="Vivo">
+                <img src="assets/img/vivoi.jpg" alt="Vivo Play">
+                <h2>Vivo Play</h2>
+                <a href="https://bit.ly/43TL4Lg">Comprar via WhatsApp</a>
+            </div>
+            <div class="produto" data-name="Mubi">
+                <img src="assets/img/mu.png" alt="Mubi">
+                <h2>Mubi</h2>
+                <a href="https://bit.ly/43TL4Lg">Comprar via WhatsApp</a>
+            </div>
+            <div class="produto" data-name="Luke Filmes">
+                <img src="assets/img/looke.jpg" alt="Luke Filmes">
+                <h2>Luke Filmes</h2>
+                <a href="https://bit.ly/43TL4Lg">Comprar via WhatsApp</a>
+            </div>
+            <div class="produto" data-name="Play Plus">
+                <img src="assets/img/plus.jpg" alt="Play Plus">
+                <h2>Play Plus</h2>
+                <a href="https://bit.ly/43TL4Lg">Comprar via WhatsApp</a>
+            </div>
+            <div class="produto" data-name="Appel TV">
+                <img src="assets/img/apple.jpg" alt="Appel TV">
+                <h2>Appel TV</h2>
+                <a href="https://bit.ly/43TL4Lg">Comprar via WhatsApp</a>
+            </div>
+            <div class="produto" data-name="Zapping">
+                <img src="assets/img/zapping.png" alt="Zapping">
+                <h2>Zapping</h2>
+                <a href="https://bit.ly/43TL4Lg">Comprar via WhatsApp</a>
+            </div>
+            <div class="produto" data-name="Viki Rakuten">
+                <img src="assets/img/viki.png" alt="Viki Rakuten">
+                <h2>Viki Rakuten</h2>
+                <a href="https://bit.ly/43TL4Lg">Comprar via WhatsApp</a>
+            </div>
+            <div class="produto" data-name="Univer Video">
+                <img src="assets/img/uni.jpg" alt="Univer video">
+                <h2>Univer Video</h2>
+                <a href="https://bit.ly/43TL4Lg">Comprar via WhatsApp</a>
+            </div>
+            <div class="produto" data-name="You Tube">
+                <img src="assets/img/y1.png" alt="You tube">
+                <h2>Yuo Tube</h2>
+                <a href="https://bit.ly/43TL4Lg">Comprar via WhatsApp</a>
+            </div>
+            <div class="produto" data-name="UFC">
+                <img src="assets/img/ufc.jpg" alt="UFC">
+                <h2>UFC</h2>
+                <a href="https://bit.ly/43TL4Lg">Comprar via WhatsApp</a>
+            </div>
+            <div class="produto" data-name="Telecine">
+                <img src="assets/img/tele.png" alt="Telecine">
+                <h2>Telecine</h2>
+                <a href="https://bit.ly/43TL4Lg">Comprar via WhatsApp</a>
+            </div>
+            <div class="produto" data-name="Canva Pro">
+                <img src="assets/img/canva.jpg" alt="Canva Pro">
+                <h2>Canva Pro</h2>
+                <a href="https://bit.ly/43TL4Lg">Comprar via WhatsApp</a>
+            </div>
+            <div class="produto" data-name="Deezer">
+                <img src="assets/img/deezer.png" alt="Deezer">
+                <h2>Deezer</h2>
+                <a href="https://bit.ly/43TL4Lg">Comprar via WhatsApp</a>
+            </div>
+            <div class="produto" data-name="Spotify">
+                <img src="assets/img/spt.jpeg" alt="Spotify">
+                <h2>Spotify</h2>
+                <a href="https://bit.ly/43TL4Lg">Comprar via WhatsApp</a>
+            </div>
+            <div class="produto" data-name="Pics Art">
+                <img src="assets/img/picsart.webp" alt="Pics Art">
+                <h2>Pics Art</h2>
+                <a href="https://bit.ly/43TL4Lg">Comprar via WhatsApp</a>
+            </div>
+            <div class="produto" data-name="Cap Cut">
+                <img src="assets/img/cap.png" alt="Cap Cut">
+                <h2>Cap Cut PRO</h2>
+                <a href="https://bit.ly/43TL4Lg">Comprar via WhatsApp</a>
+            </div>
+            <div class="produto" data-name="Appel Music">
+                <img src="assets/img/musicapple.png" alt="Apple Music">
+                <h2>Apple Music</h2>
+                <a href="https://bit.ly/43TL4Lg">Comprar via WhatsApp</a>
+            </div>
+            <div class="produto" data-name="Tidal">
+                <img src="assets/img/tidal.png" alt="Tidal Music">
+                <h2>Tidal Music</h2>
+                <a href="https://bit.ly/43TL4Lg">Comprar via WhatsApp</a>
+            </div>
+            <div class="produto" data-name="Duolingo">
+                <img src="assets/img/duo.png" alt="Duolingo">
+                <h2>Duolingo Plus</h2>
+                <a href="https://bit.ly/43TL4Lg">Comprar via WhatsApp</a>
+            </div>
+
+            <div class="produto" data-name="Anime">
+                <img src="assets/img/fire.jpg" alt="Anime Fire">
+                <h2>Anime Fire</h2>
+                <a href="https://bit.ly/43TL4Lg">Comprar via WhatsApp</a>
+            </div>
+            <div class="produto" data-name="Game Pass">
+                <img src="assets/img/game_pass.webp" alt="Game Pass">
+                <h2>Game Pass</h2>
+                <a href="https://bit.ly/43TL4Lg">Comprar via WhatsApp</a>
+            </div>
+        </section>
+    </main>
+
+   <script src="script/index.js"></script>
+</body>
+</html>
